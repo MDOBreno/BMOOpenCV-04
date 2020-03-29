@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		333502852430436E0003C4B7 /* BMOOpenCV-04 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "BMOOpenCV-04"; sourceTree = BUILT_PRODUCTS_DIR; };
 		333502882430436E0003C4B7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		3335028F243043740003C4B7 /* BMOOpenCV-04.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BMOOpenCV-04.entitlements"; sourceTree = "<group>"; };
+		33727D952430FC5100E06069 /* Me.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Me.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,19 @@
 		333502872430436E0003C4B7 /* BMOOpenCV-04 */ = {
 			isa = PBXGroup;
 			children = (
+				33727D942430FC3600E06069 /* Images */,
+				3335028F243043740003C4B7 /* BMOOpenCV-04.entitlements */,
 				333502882430436E0003C4B7 /* main.cpp */,
 			);
 			path = "BMOOpenCV-04";
+			sourceTree = "<group>";
+		};
+		33727D942430FC3600E06069 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				33727D952430FC5100E06069 /* Me.jpeg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +250,30 @@
 		3335028D2430436E0003C4B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "BMOOpenCV-04/BMOOpenCV-04.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5RH7482C6;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,9 +281,30 @@
 		3335028E2430436E0003C4B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "BMOOpenCV-04/BMOOpenCV-04.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L5RH7482C6;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lopencv_calib3d",
+					"-lopencv_core",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_highgui",
+					"-lopencv_imgcodecs",
+					"-lopencv_imgproc",
+					"-lopencv_ml",
+					"-lopencv_objdetect",
+					"-lopencv_photo",
+					"-lopencv_shape",
+					"-lopencv_stitching",
+					"-lopencv_superres",
+					"-lopencv_video",
+					"-lopencv_videoio",
+					"-lopencv_videostab",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
